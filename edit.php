@@ -34,13 +34,8 @@ if (isset($_POST['submit'])) {
         <input type="number" name="harga" id="harga" value="<?= $data['harga']; ?>" required>
         <br>
         <label for="stok">Stok</label>
-<<<<<<< HEAD
         <input type="text" name="stok" id="stok" value="<?= $data['stok']; ?>"> <br>
         <button type="submit" name="submit">SIMPAN</button>
-=======
-        <input type="text" name="stok" id="stok" value="<?= $data['stok']; ?>">
-        <button type="submit" name="submit">Edit</button>
->>>>>>> 7374f9db96640ca75780cce452db8ccd5f184c13
     </form>
 </body>
 </html>
