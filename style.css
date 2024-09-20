@@ -1,0 +1,21 @@
+html,body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.title{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title span{
+    color: orange;
+    font-style: oblique;
+    font-family: 'Roboto';
+    font-weight: 650;
+}
+

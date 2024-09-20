@@ -2,7 +2,7 @@
 
 include 'config.php';
 
-$query = "SELECT * FROM barang limit 2";
+$query = "SELECT * FROM barang limit 2,4";
 $result = mysqli_query($conn, $query);
 ?>
 
@@ -64,7 +64,7 @@ $result = mysqli_query($conn, $query);
 <nav aria-label="Page navigation example" class="d-flex justify-content-center">
   <ul class="pagination">
     <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
+      <a class="page-link" href="index.php" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
     </li>
@@ -72,7 +72,7 @@ $result = mysqli_query($conn, $query);
     <li class="page-item"><a class="page-link" href="index2.php">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
     <li class="page-item">
-      <a class="page-link" href="index2.php" aria-label="Next">
+      <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
