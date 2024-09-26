@@ -5,7 +5,7 @@ include 'config.php';
 $sql = "INSERT INTO master_penjualan (id_user, id_kasir) VALUES (1, 1)"; // Sesuaikan dengan user/kasir
 if ($conn->query($sql) === TRUE) {
     $id_penj = $conn->insert_id; // Dapatkan ID penjualan yang baru saja dibuat
-    header("Location: select_items.php?id_penj=$id_penj"); // Arahkan ke halaman pemilihan barang
+    header("Location: memilih_barang.php?id_penj=$id_penj"); // Arahkan ke halaman pemilihan barang
 } else {
     echo "Error: " . $conn->error;
 }

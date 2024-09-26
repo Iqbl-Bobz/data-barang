@@ -10,9 +10,11 @@
         <strong> ANDA MAU KEMANA ? </strong> <br>
     </h1>
 
-    TAMBAH TRANSAKSI BARU? KLIK INI 👉 <a href="add_transaction.php"><input type="button" value="KUNJUNGI"></a> <br>
+    TAMBAH TRANSAKSI BARU? KLIK INI 👉 <a href="tambahkan_transaksi.php"><input type="button" value="KUNJUNGI"></a> <br>
     LIHAT BARANG YANG TERSEDIA? KLIK INI 👉 <a href="tampilan_dataBarang.php"><input type="button" value="KUNJUNGI"></a> <br>
-    
+    LIHAT TABEL DATA DETAIL PENJUALAN > KLIK INI 👉 <a href="tampilanTableDetail_Penjualan.php"><input type="button" value="KUNJUNGI"></a> <br>
+    LIHAT TABEL DATA MASTER PENJUALAN > KLIK INI 👉<a href="tampilanTableMaster_Penjualan.php"><input type="button" value="KUNJUNGI"></a> <br>
+
     
 
 </body>

@@ -127,10 +127,10 @@ $result = $conn->query($sql);
     <p>Uang Bayar : <u> Rp. <?php echo $uang_bayar;?> </u></p>
     <p>Kembalian : <u> Rp. <?php echo $kembalian;?></u> <br></p>
     <p>ID USER : <u><?= $data['id_user']; ?> </u></p>
-    <a href="add_transaction.php">SELESAIKAN DAN MULAI TRANSAKSI BARU!</a>
+    <a href="tambahkan_transaksi.php">SELESAIKAN DAN MULAI TRANSAKSI BARU!</a>
     <?php elseif (isset($error_message)): ?>
         <h1><?php echo $error_message;?></h1>
 <?php endif; ?>
 
 
-<a href="cancel_transaction.php?id_penj=<?php echo $id_penj; ?>">Batalkan Transaksi</a>
+<a href="batalkan_transaksi.php?id_penj=<?php echo $id_penj; ?>">Batalkan Transaksi</a>

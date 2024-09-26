@@ -5,7 +5,7 @@ include 'config.php';
 $sql = "SELECT * FROM detail_penjualan";
 $result = $conn->query($sql);
 
-
+echo "<input type='button' value='KEMBALI' onclick='history.back()'>";
 if($result->num_rows > 0 ){
     echo "<table border = '1' cellspacing='0' cellpadding='5'>";
     echo "<tr>";
@@ -29,3 +29,5 @@ if($result->num_rows > 0 ){
 }
 
 ?>
+
+    
