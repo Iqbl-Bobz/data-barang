@@ -20,14 +20,14 @@ if(isset($_POST['submit'])){
 
 }
 ?>
-
+<a href="tampilan_dataBarang.php"> <button>KEMBALI</button></a>
 
 <h1> EDIT / UPDATE BARANG</h1>
 
 <form action="" method="POST">
     
     Nama Barang : <input type="text" name="nama_barang" value="<?= $data['nama_barang']; ?>" required> <br>
-    Harga 1 Unit : <input type="number" name="harga" value=" <?= $data['harga']; ?>" required> <br>
+    Harga 1 Unit : <input type="number" name="harga" value="<?= $data['harga']; ?>" required> <br>
     Stok : <input type="number" name="stok" value="<?= $data['stok']; ?>" required> <br>
     <input type="submit" value="[+] UPDATE [+]" name="submit">
 

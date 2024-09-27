@@ -5,6 +5,8 @@ include 'config.php';
 $sql = "SELECT * FROM detail_penjualan";
 $result = $conn->query($sql);
 
+$total_belanja = 0;
+
 echo "<input type='button' value='KEMBALI' onclick='history.back()'>";
 if($result->num_rows > 0 ){
     echo "<table border = '1' cellspacing='0' cellpadding='5'>";
@@ -17,6 +19,8 @@ if($result->num_rows > 0 ){
     echo "</tr>";
     
     while ($row = $result->fetch_assoc()){
+        $total_belanja += $row['sub_tot'];
+        
         echo "<tr>";
         echo "<td>" . $row['id_detail'] . "</td>";
         echo "<td>" . $row['id_penju'] . "</td>";
@@ -26,6 +30,9 @@ if($result->num_rows > 0 ){
         echo "</tr>";
     }
     echo "</table>";
+
+    echo "<h2 style= 'color: green;'>Total belanja : Rp. " . $total_belanja . "</h2>";
+
 }
 
 ?>
